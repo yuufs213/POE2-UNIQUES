@@ -4,57 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#17100b">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <title>POE2 Unique Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="app-container">
-        <header>
-            <h1>Path of Exile 2</h1>
-            <h2>Unique Tracker</h2>
+
+    <div class="app-shell">
+        
+        <!-- Top Header -->
+        <div class="topbar">
+            <div>
+                <p class="eyebrow">Path of Exile 2</p>
+                <h1>Unique Tracker</h1>
+            </div>
+            <!-- Optional: You can add a settings icon here if you want -->
+        </div>
+
+        <!-- Summary Section -->
+        <div class="summary">
             <div class="progress-ring" id="progressRing">
                 <span id="percentText">0%</span>
             </div>
-            <div class="summary">
-                <span><strong id="collectedCount">0</strong> / <strong id="totalCount">439</strong></span>
-                <span id="remainingCount">439 remaining</span>
+            <div>
+                <p class="summary-main"><strong id="collectedCount">0</strong> / <strong id="totalCount">439</strong></p>
+                <p class="summary-sub" id="remainingCount">439 remaining</p>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <div class="controls">
+        <!-- Controls Section -->
+        <div class="controls">
+            
+            <!-- Search Box -->
+            <div class="search-box">
+                <span>⌕</span>
                 <input type="text" id="searchInput" placeholder="Search uniques...">
-                <div class="segments">
-                    <button class="segment active" data-status="all">All</button>
-                    <button class="segment" data-status="missing">Missing</button>
-                    <button class="segment" data-status="collected">Owned</button>
-                </div>
-                <div class="actions">
-                    <button id="markVisibleButton">Mark Visible</button>
-                    <button id="clearVisibleButton">Clear Visible</button>
-                    <button id="importButton">Import</button>
-                    <button id="exportButton">Export</button>
-                    <input type="file" id="importFile" accept=".json" style="display: none;">
-                </div>
             </div>
 
-            <div id="categoryStrip" class="category-strip"></div>
-            <div id="itemGrid" class="item-grid"></div>
-        </main>
-
-        <dialog id="itemDialog">
-            <div class="dialog-content">
-                <button id="dialogClose" class="close-btn">×</button>
-                <img id="dialogImage" src="" alt="">
-                <h3 id="dialogName"></h3>
-                <p id="dialogMeta"></p>
-                <button id="dialogToggle">Mark Owned</button>
+            <!-- Segmented Control (All/Missing/Owned) -->
+            <div class="segmented">
+                <button class="segment active" data-status="all">All</button>
+                <button class="segment" data-status="missing">Missing</button>
+                <button class="segment" data-status="collected">Owned</button>
             </div>
-        </dialog>
+
+            <!-- Action Buttons -->
+            <div class="action-row">
+                <button id="markVisibleButton">Mark Visible</button>
+                <button id="clearVisibleButton">Clear Visible</button>
+                <button id="importButton">Import</button>
+            </div>
+            
+            <!-- Hidden File Input for Import -->
+            <input type="file" id="importFile" accept=".json" style="display: none;">
+            
+            <!-- Export Button (Separate row or inline) -->
+             <div class="action-row" style="grid-template-columns: 1fr; margin-top: -4px;">
+                <button id="exportButton" style="background: #2b2118;">💾 Backup Progress</button>
+            </div>
+
+        </div>
+
+        <!-- Category Strip -->
+        <div id="categoryStrip" class="category-strip"></div>
+
+        <!-- Item Grid -->
+        <div id="itemGrid" class="item-grid"></div>
+
     </div>
+
+    <!-- Dialog Modal -->
+    <dialog id="itemDialog">
+        <button id="dialogClose" class="dialog-close">×</button>
+        <img id="dialogImage" src="" alt="">
+        <h2 id="dialogName"></h2>
+        <p id="dialogMeta"></p>
+        <button id="dialogToggle">Mark Owned</button>
+    </dialog>
 
     <script src="data.js"></script>
     <script src="app.js"></script>
