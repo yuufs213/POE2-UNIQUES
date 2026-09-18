@@ -1,5 +1,6 @@
 const items = window.POE2_UNIQUES || [];
 const STORAGE_KEY = "poe2-unique-tracker:v1";
+// Trim categories to ensure clean matching
 const categories = ["All", ...new Set(items.map((item) => item.category.trim()))];
 
 let collected = loadCollected();
@@ -8,7 +9,7 @@ let activeStatus = "all";
 let searchTerm = "";
 let currentDialogItem = null;
 
-// Selectors (Trimmed to match HTML IDs exactly)
+// Selectors
 const itemGrid = document.querySelector("#itemGrid");
 const categoryStrip = document.querySelector("#categoryStrip");
 const searchInput = document.querySelector("#searchInput");
@@ -39,7 +40,7 @@ function saveCollected() {
 function filteredItems() {
     const needle = searchTerm.trim().toLowerCase();
     return items.filter((item) => {
-        // Trim IDs and categories to handle data.js spacing issues
+        // Clean IDs and Categories from data.js spacing issues
         const itemId = item.id.trim();
         const itemCat = item.category.trim();
         
@@ -52,7 +53,7 @@ function filteredItems() {
         const textOk =
             !needle ||
             item.name.toLowerCase().includes(needle) ||
-            item.baseType.toLowerCase().includes(needle) ||
+            (item.baseType && item.baseType.toLowerCase().includes(needle)) ||
             itemCat.toLowerCase().includes(needle);
         return categoryOk && statusOk && textOk;
     });
@@ -112,6 +113,7 @@ function renderItems() {
         const thumb = document.createElement("span");
         thumb.className = "thumb";
         const img = document.createElement("img");
+        // Use trimmed image path
         img.src = item.image.trim();
         img.alt = item.name;
         img.loading = "lazy";
@@ -205,8 +207,9 @@ function importProgress(file) {
             collected = new Set(incoming.filter((id) => validIds.has(id.trim())));
             saveCollected();
             render();
-        } catch {
-            return;
+            alert("Progress restored!");
+        } catch (e) {
+            alert("Error importing file.");
         }
     });
     reader.readAsText(file);
