@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#17100b">
+    <title>POE2 Unique Tracker</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Path of Exile 2</p>
+          <h1>Unique Tracker</h1>
+        </div>
+        <button class="icon-button" id="exportButton" type="button" aria-label="Export progress" title="Export progress">
+          <span aria-hidden="true">⇩</span>
+        </button>
+      </header>
+
+      <section class="summary" aria-label="Collection progress">
+        <div class="progress-ring" id="progressRing">
+          <span id="percentText">0%</span>
+        </div>
+        <div class="summary-copy">
+          <p class="summary-main"><span id="collectedCount">0</span> / <span id="totalCount">439</span></p>
+          <p class="summary-sub"><span id="remainingCount">439</span> remaining</p>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Filters">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search uniques" autocomplete="off">
+        </label>
+        <div class="segmented" role="tablist" aria-label="Collection filter">
+          <button class="segment active" type="button" data-status="all">All</button>
+          <button class="segment" type="button" data-status="missing">Missing</button>
+          <button class="segment" type="button" data-status="collected">Owned</button>
+        </div>
+      </section>
+
+      <nav class="category-strip" id="categoryStrip" aria-label="Item categories"></nav>
+
+      <section class="action-row" aria-label="Bulk actions">
+        <button type="button" id="markVisibleButton">Mark Visible</button>
+        <button type="button" id="clearVisibleButton">Clear Visible</button>
+        <button type="button" id="importButton">Import</button>
+        <input id="importFile" type="file" accept="application/json" hidden>
+      </section>
+
+      <section class="item-grid" id="itemGrid" aria-live="polite"></section>
+    </main>
+
+    <dialog id="itemDialog">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close">×</button>
+      <img id="dialogImage" alt="">
+      <h2 id="dialogName"></h2>
+      <p id="dialogMeta"></p>
+      <button id="dialogToggle" type="button"></button>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
