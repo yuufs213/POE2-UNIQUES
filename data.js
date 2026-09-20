@@ -984,14 +984,6 @@ const POE2_UNIQUES = [
  "image": "icons/The Whispering Ice.webp"
 },
 {
- "id": "alpha-s-howl",
- "name": "Alpha's Howl",
- "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "28",
- "image": "icons/Alpha's Howl.webp"
-},
-{
  "id": "asphyxia-s-wrath",
  "name": "Asphyxia's Wrath",
  "category": "Quivers",
@@ -1000,36 +992,60 @@ const POE2_UNIQUES = [
  "image": "icons/Asphyxia's Wrath.webp"
 },
 {
- "id": "briarpatch",
- "name": "Briarpatch",
+ "id": "blackgleam",
+ "name": "Blackgleam",
  "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "20",
- "image": "icons/Briarpatch.webp"
+ "baseType": "Fire Quiver",
+ "requiredLevel": "8",
+ "image": "icons/Blackgleam.webp"
+},
+{
+ "id": "the-lethal-draw",
+ "name": "The Lethal Draw",
+ "category": "Quivers",
+ "baseType": "Sacral Quiver",
+ "requiredLevel": "16",
+ "image": "icons/The Lethal Draw.webp"
+},
+{
+ "id": "rearguard",
+ "name": "Rearguard",
+ "category": "Quivers",
+ "baseType": "Blunt Quiver",
+ "requiredLevel": "40",
+ "image": "icons/Rearguard.webp"
+},
+{
+ "id": "murkshaft",
+ "name": "Murkshaft",
+ "category": "Quivers",
+ "baseType": "Toxic Quiver",
+ "requiredLevel": "39",
+ "image": "icons/Murkshaft.webp"
+},
+{
+ "id": "cadiro-s-gambit",
+ "name": "Cadiro's Gambit",
+ "category": "Quivers",
+ "baseType": "Primed Quiver",
+ "requiredLevel": "66",
+ "image": "icons/Cadiro's Gambit.webp"
 },
 {
  "id": "drillneck",
  "name": "Drillneck",
  "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "40",
+ "baseType": "Penetrating Quiver",
+ "requiredLevel": "55",
  "image": "icons/Drillneck.webp"
 },
 {
- "id": "slivertongue",
- "name": "Slivertongue",
+ "id": "beyond-reach",
+ "name": "Beyond Reach",
  "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "35",
- "image": "icons/Slivertongue.webp"
-},
-{
- "id": "wulfsbane",
- "name": "Wulfsbane",
- "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "50",
- "image": "icons/Wulfsbane.webp"
+ "baseType": "Visceral Quiver",
+ "requiredLevel": "65",
+ "image": "icons/Beyond Reach.webp"
 },
 {
  "id": "bijouborne",
