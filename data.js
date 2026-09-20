@@ -1,4 +1,4 @@
-const POE2_UNIQUES = [
+window.POE2_UNIQUES = [
 {
  "id": "blood-of-the-warrior",
  "name": "Blood of the Warrior",
