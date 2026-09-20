@@ -3470,6 +3470,6 @@ const POE2_UNIQUES = [
  "baseType": "Ashbark Talisman",
  "requiredLevel": "72",
  "image": "icons/Fury of the King.webp"
-},
+}
 ];
 
