@@ -872,14 +872,6 @@ const POE2_UNIQUES = [
  "image": "icons/Quill Rain.webp"
 },
 {
- "id": "skysliver",
- "name": "Skysliver",
- "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "30",
- "image": "icons/Skysliver.webp"
-},
-{
  "id": "splinterheart",
  "name": "Splinterheart",
  "category": "Bows",
@@ -888,98 +880,82 @@ const POE2_UNIQUES = [
  "image": "icons/Splinterheart.webp"
 },
 {
- "id": "the-bringer-of-rain",
- "name": "The Bringer of Rain",
- "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "40",
- "image": "icons/The Bringer of Rain.webp"
-},
-{
- "id": "the-wicked-quill",
- "name": "The Wicked Quill",
- "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "50",
- "image": "icons/The Wicked Quill.webp"
-},
-{
- "id": "ab-aeterno",
- "name": "Ab Aeterno",
+ "id": "atziri-s-rule",
+ "name": "Atziri's Rule",
  "category": "Staves",
- "baseType": "Woodful Staff",
- "requiredLevel": "12",
- "image": "icons/Ab Aeterno.webp"
+ "baseType": "Reflecting Staff",
+ "requiredLevel": "70",
+ "image": "icons/Atziri's Rule.webp"
 },
 {
- "id": "aerisvane-s-wings",
- "name": "Aerisvane's Wings",
+ "id": "dusk-vigil",
+ "name": "Dusk Vigil",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "60",
- "image": "icons/Aerisvane's Wings.webp"
+ "baseType": "Ashen Staff",
+ "requiredLevel": "1",
+ "image": "icons/Dusk Vigil.webp"
 },
 {
- "id": "alkem-eira",
- "name": "Alkem Eira",
+ "id": "earthbound",
+ "name": "Earthbound",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "55",
- "image": "icons/Alkem Eira.webp"
+ "baseType": "Voltaic Staff",
+ "requiredLevel": "2",
+ "image": "icons/Earthbound.webp"
 },
 {
- "id": "apep-s-supremacy",
- "name": "Apep's Supremacy",
+ "id": "sire-of-shards",
+ "name": "Sire of Shards",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
+ "baseType": "Chiming Staff",
+ "requiredLevel": "25",
+ "image": "icons/Sire of Shards.webp"
+},
+{
+ "id": "taryn-s-shiver",
+ "name": "Taryn's Shiver",
+ "category": "Staves",
+ "baseType": "Gelid Staff",
+ "requiredLevel": "2",
+ "image": "icons/Taryn's Shiver.webp"
+},
+{
+ "id": "the-burden-of-shadows",
+ "name": "The Burden of Shadows",
+ "category": "Staves",
+ "baseType": "Chiming Staff",
+ "requiredLevel": "78",
+ "image": "icons/The Burden of Shadows.webp"
+},
+{
+ "id": "the-raven-s-flock",
+ "name": "The Raven's Flock",
+ "category": "Staves",
+ "baseType": "Perching Staff",
  "requiredLevel": "65",
- "image": "icons/Apep's Supremacy.webp"
+ "image": "icons/The Raven's Flock.webp"
 },
 {
- "id": "byrnabas",
- "name": "Byrnabas",
+ "id": "the-searing-touch",
+ "name": "The Searing Touch",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "50",
- "image": "icons/Byrnabas.webp"
+ "baseType": "Pyrophyte Staff",
+ "requiredLevel": "16",
+ "image": "icons/The Searing Touch.webp"
 },
 {
- "id": "candlemaker",
- "name": "Candlemaker",
+ "id": "the-unborn-lich",
+ "name": "The Unborn Lich",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "45",
- "image": "icons/Candlemaker.webp"
-},
-{
- "id": "choir-of-the-storm",
- "name": "Choir of the Storm",
- "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "60",
- "image": "icons/Choir of the Storm.webp"
-},
-{
- "id": "duality",
- "name": "Duality",
- "category": "Staves",
- "baseType": "Ezomyte Staff",
- "requiredLevel": "55",
- "image": "icons/Duality.webp"
-},
-{
- "id": "pillars-of-the-caged-god",
- "name": "Pillar of the Caged God",
- "category": "Staves",
- "baseType": "Ezomyte Staff",
+ "baseType": "Ravenous Staff",
  "requiredLevel": "65",
- "image": "icons/Pillar of the Caged God.webp"
+ "image": "icons/The Unborn Lich.webp"
 },
 {
  "id": "the-whispering-ice",
  "name": "The Whispering Ice",
  "category": "Staves",
- "baseType": "Ezomyte Staff",
+ "baseType": "Permafrost Staff",
  "requiredLevel": "35",
  "image": "icons/The Whispering Ice.webp"
 },
@@ -1014,22 +990,6 @@ const POE2_UNIQUES = [
  "baseType": "Two-Point Arrow Quiver",
  "requiredLevel": "40",
  "image": "icons/Drillneck.webp"
-},
-{
- "id": "fireflower",
- "name": "Fireflower",
- "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "30",
- "image": "icons/Fireflower.webp"
-},
-{
- "id": "grip-of-winter",
- "name": "Grip of Winter",
- "category": "Quivers",
- "baseType": "Two-Point Arrow Quiver",
- "requiredLevel": "45",
- "image": "icons/Grip of Winter.webp"
 },
 {
  "id": "slivertongue",
