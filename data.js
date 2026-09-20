@@ -816,19 +816,11 @@ const POE2_UNIQUES = [
  "image": "icons/Twisted Empyrean.webp"
 },
 {
- "id": "calgyra-s-arc",
- "name": "Calgyra's Arc",
- "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "16",
- "image": "icons/Calgyra's Arc.webp"
-},
-{
  "id": "death-s-harp",
  "name": "Death's Harp",
  "category": "Bows",
  "baseType": "Thicket Bow",
- "requiredLevel": "32",
+ "requiredLevel": "28",
  "image": "icons/Death's Harp.webp"
 },
 {
@@ -840,44 +832,76 @@ const POE2_UNIQUES = [
  "image": "icons/Doomfletch.webp"
 },
 {
- "id": "glimpse-of-chaos",
- "name": "Glimpse of Chaos",
+ "id": "fairgraves-curse",
+ "name": "Fairgraves' Curse",
  "category": "Bows",
- "baseType": "Bone Bow",
- "requiredLevel": "40",
- "image": "icons/Glimpse of Chaos.webp"
+ "baseType": "Artillery Bow",
+ "requiredLevel": "45",
+ "image": "icons/Fairgraves' Curse.webp"
 },
 {
- "id": "keeper-of-the-arc",
- "name": "Keeper of the Arc",
+ "id": "ironbound",
+ "name": "Ironbound",
  "category": "Bows",
- "baseType": "Long Bow",
- "requiredLevel": "28",
- "image": "icons/Keeper of the Arc.webp"
+ "baseType": "Warden Bow",
+ "requiredLevel": "11",
+ "image": "icons/Ironbound.webp"
 },
 {
  "id": "lioneye-s-glare",
  "name": "Lioneye's Glare",
  "category": "Bows",
- "baseType": "Composite Bow",
+ "baseType": "Heavy Bow",
  "requiredLevel": "12",
  "image": "icons/Lioneye's Glare.webp"
+},
+{
+ "id": "periphery",
+ "name": "Periphery",
+ "category": "Bows",
+ "baseType": "Heartwood Shortbow",
+ "requiredLevel": "67",
+ "image": "icons/Periphery.webp"
 },
 {
  "id": "quill-rain",
  "name": "Quill Rain",
  "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "18",
+ "baseType": "Shortbow",
+ "requiredLevel": "5",
  "image": "icons/Quill Rain.webp"
+},
+{
+ "id": "slivertongue",
+ "name": "Slivertongue",
+ "category": "Bows",
+ "baseType": "Zealot Bow",
+ "requiredLevel": "39",
+ "image": "icons/Slivertongue.webp"
 },
 {
  "id": "splinterheart",
  "name": "Splinterheart",
  "category": "Bows",
- "baseType": "Composite Bow",
- "requiredLevel": "45",
+ "baseType": "Recurve Bow",
+ "requiredLevel": "16",
  "image": "icons/Splinterheart.webp"
+},
+{
+ "id": "voltaxic-rift",
+ "name": "Voltaxic Rift",
+ "category": "Bows",
+ "baseType": "Fanatic Bow",
+ "requiredLevel": "79",
+ "image": "icons/Voltaxic Rift.webp"
+},
+{
+ "id": "widowhail",
+ "name": "Widowhail",
+ "category": "Bows",
+ "baseType": "Crude Bow",
+ "requiredLevel": "1",
+ "image": "icons/Widowhail.webp"
 },
 {
  "id": "atziri-s-rule",
